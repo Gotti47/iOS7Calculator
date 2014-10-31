@@ -1,0 +1,173 @@
+
+<!--  Copyright (C) 2014,Newton Bujiku 
+This program is free software: you can redistribute it and/or modify it under the 
+terms of the GNU General Public License as published by the Free Software Foundation, 
+either version 3 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+without even the implied warranty of MERCHANTABIL- ITY or FITNESS FOR A PARTICULAR PURPOSE. 
+See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with this program. 
+If not, see http://www.gnu.org/licenses/. -->
+
+<!-- 
+This is the layout file of our applications. It contains all the properties about our
+views. Pay attention we are using full namespace here like
+ 
+com.gottibujiku.android.ios7cal.customviews.CustomTextView 
+and not just CustomView since these Views are Custom ones and not default
+by Android APIs.
+For the style property make sure to check the values/styles.xmls
+
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.gottibujiku.android.ios7cal.customviews.CustomTextView
+        android:id="@+id/text_display"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2"
+        android:gravity="right"
+        android:maxLines="2"
+        android:text="@string/zero"
+        android:textColor="@android:color/white"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:id="@+id/button_group_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_ac"
+            style="@style/button_number_style"
+            android:text="@string/ac" 
+            />
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_positive_negative"
+            style="@style/button_number_style"
+            android:text="@string/positive_negative" />
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_percentage"
+            style="@style/button_number_style"
+            android:text="@string/percentage" />
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_division"
+            style="@style/button_operation_style"
+            android:text="@string/divide" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_group_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_7"
+            style="@style/button_number_style"
+            android:text="@string/seven" />
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_8"
+            style="@style/button_number_style"
+            android:text="@string/eight" />
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_9"
+            style="@style/button_number_style"
+            android:text="@string/nine" />
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_multiplication"
+            style="@style/button_operation_style"
+            android:text="@string/multiply" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_group_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_4"
+            style="@style/button_number_style"
+            android:text="@string/four" />
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_5"
+            style="@style/button_number_style"
+            android:text="@string/five" />
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_6"
+            style="@style/button_number_style"
+            android:text="@string/six" />
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_minus"
+            style="@style/button_operation_style"
+            android:text="@string/minus" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_group_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_1"
+            style="@style/button_number_style"
+            android:text="@string/one" />
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_2"
+            style="@style/button_number_style"
+            android:text="@string/two" />
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_3"
+            style="@style/button_number_style"
+            android:text="@string/three" />
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+            android:id="@+id/button_plus"
+            style="@style/button_operation_style"
+            android:text="@string/plus" />
+    </LinearLayout>
+
+     
+        <LinearLayout
+            android:id="@+id/button_group_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+                android:id="@+id/button_0"
+                style="@style/button_zero_style"
+                android:text="@string/zero" />
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+                android:id="@+id/button_point"
+            style="@style/button_number_style"
+                android:gravity="center"
+                android:text="@string/point" />
+
+        <com.gottibujiku.android.ios7cal.customviews.CustomButton
+                android:id="@+id/button_equal"
+                style="@style/button_operation_style"
+                android:text="@string/equal" />
+        </LinearLayout>
+</LinearLayout>
